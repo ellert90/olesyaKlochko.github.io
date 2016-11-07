@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
@@ -15,81 +15,85 @@
 }
 
 body {
-  background-color: #ebebeb;
-  font-family: "Helvetica Neue", tahoma, sans-serif;
+    background-color: #ebebeb;
+    font-family: "Helvetica Neue", tahoma, sans-serif;
  }
 
  .nav {
-  background-image: url(../img/pattern.jpg);
-  height: 36px;
-  margin: auto;
+    background-image: url(../img/pattern.jpg);
+    height: 36px;
+    margin: auto;
  }
 
 .nav_1 {
-  float: right;
+    float: right;
 }
 
 .nav_2 {
-  float: right;
-  border-left: 1px solid #6699cc;
-  margin-right: 21px;
-
+    float: right;
+    border-left: 1px solid #6699cc;
+    margin-right: 21px;
 }
 
 .clearfix:afrer {
-  content: ' ';
-  clear: both;
-  display: block;
+    content: ' ';
+    clear: both;
+    display: block;
 }
 
  .nav_menu li {
-     display: inline-block;
-     width: 90px;
-     height: 36px;
-     box-sizing: border-box;
-     vertical-align: top;
-     }
-
- .nav_menu li a {
-   display: block;
-   width: 90px;
-   height: 36px;
-   color: #66ccff;
-   font-size: 14px;
-   text-decoration: none;
-   text-align: center;
-   vertical-align: bottom;
-   line-height: 36px;
-}
-
- .nav_menu li a:hover {
-     background-color: #6699cc;
-     width: 90px;
-     color: white;
-     font-weight: bold;
-}
-
-.nav_info li {
     display: inline-block;
-    width: 200px;
+    width: 90px;
     height: 36px;
     box-sizing: border-box;
     vertical-align: top;
 }
 
+ .nav_menu li a {
+    display: block;
+    width: 90px;
+    height: 36px;
+    color: #66ccff;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 36px;
+}
+
+ .nav_menu li a:hover {
+    background-color: #6699cc;
+    width: 90px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav_info li {
+    display: inline-block;
+    width: auto;
+    height: 36px;
+    box-sizing: border-box;
+    vertical-align: top;
+
+}
+
 .nav_info li a {
-  display: block;
-  height: 36px;
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: bottom;
-  line-height: 36px;
+    display: block;
+    width: auto;
+    height: 36px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 36px;
+    padding-left: 10px;
+    padding-right: 15px;
 
 }
 .nav_info li a:hover {
     background: linear-gradient(to bottom, #6699cc, #3366cc);
+    width: auto;
     border: 1px solid #6699cc;
     font-weight: bold;
     box-sizing: border-box;
@@ -103,7 +107,7 @@ body {
 }
 
 span {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .container {
@@ -117,93 +121,118 @@ span {
 }
 
 .account {
-  background-color: rgba(48, 48, 48, 0.63);
-  width: 568px;
-  height: 613px;
-  margin: auto;
-  font-size: 14px;
-
+    background-color: rgba(48, 48, 48, 0.63);
+    width: 568px;
+    height: 613px;
+    margin: auto;
+    font-size: 14px;
 }
 
+.flag {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+
+
 h2 {
-  display: block;
-  color: white;
-  height: 46px;
-  line-height: 46px;
-  border-bottom: 1px solid #cccccc;
-  text-align: center;
-  font-family: "Helvetica Neue", tahoma, sans-serif;
+    display: block;
+    color: white;
+    height: 46px;
+    line-height: 46px;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+    font-family: "Helvetica Neue", tahoma, sans-serif;
 }
 
 .account a {
-  display: block;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
+    display: block;
+    height: 70px;
+    line-height: 100px;
+    text-align: center;
 }
 
 input {
-  margin-left: 145px;
-
+    margin-left: 145px;
 }
 
 .bottom {
-  outline: none;
-  width: 257px;
-  height: 36px;
-  background-color: black;
-  color: #cccccc;
-  font-size: 14px;
-  text-align: left;
-  border: 0;
-  border-bottom: 1px solid #666666;
-  margin-bottom: 20px;
-  font-family: "Helvetica Neue", tahoma, sans-serif;
-  padding-left: 20px;
+    outline: none;
+    width: 257px;
+    height: 36px;
+    background-color: black;
+    color: #cccccc;
+    font-size: 14px;
+    text-align: left;
+    border: 0;
+    border-bottom: 1px solid #666666;
+    margin-bottom: 20px;
+    font-family: "Helvetica Neue", tahoma, sans-serif;
+    padding-left: 20px;
 }
 
-.bottom:hover {
-  background-color: #336699;
-  box-shadow: 0 0 12px rgb(220, 220, 225);
+.bottom:focus {
+    background-color: #336699;
+    box-shadow: 0 0 12px rgb(220, 220, 225);
 }
 
 .bottom_create {
-  outline: none;
-  width: 152px;
-  height: 36px;
-  background: linear-gradient(to bottom, #6699cc, #3366cc);
-  border: 1px solid #336699;
-  color: #cccccc;
-  font-size: 14px;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-left: 190px;
-  text-align: center;
-  font-family: "Helvetica Neue", tahoma, sans-serif;
+    outline: none;
+    width: 152px;
+    height: 36px;
+    background: linear-gradient(to bottom, #6699cc, #3366cc);
+    border: 1px solid #336699;
+    color: #cccccc;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 190px;
+    text-align: center;
+    font-family: "Helvetica Neue", tahoma, sans-serif;
 }
 
 .bottom_create:hover {
-  box-shadow: 0 0 8px rgb(220, 220, 225);
+    box-shadow: 0 0 8px rgb(220, 220, 225);
 
 }
 
 input[type="checkbox"] {
     margin-bottom: 1px;
     vertical-align: bottom;
-  }
-
+}
 
 label {
-  font-size: 14px;
-  color: #cccccc;
-  display: inline-block;
-  margin-left: 4px;
+    font-size: 14px;
+    color: #cccccc;
+    display: inline-block;
+    margin-left: 4px;
 }
 
 p {
-  text-align: center;
-  color: #cccccc;
-  font-size: 11px;
-  display: block;
-  margin-top: 20px;
+    text-align: center;
+    color: #cccccc;
+    font-size: 11px;
+    display: block;
+    margin-top: 20px;
+}
+
+.OU {
+    position: relative;
+    width: 70px;
+    margin-top: 13px;
+    margin-bottom: 25px;
+    padding-left: 145px;
+}
+
+.OU span {
+    text-decoration: none;
+    padding-left: 129px;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.lines {
+    position: absolute;
+    left: 145px;
+    top: 7px;
 }
