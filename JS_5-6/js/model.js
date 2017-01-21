@@ -1,15 +1,19 @@
-function trim(string) {
-  return string.replace (/\s+/g, " ").replace(/(^\s*)|(\s*)$/g, '');
-}
-
  var init = 0;
  var startDate;
  var timerId;
 
+
  function clearTIME() {
   init = 0;
   clearTimeout(timerId);
-  document.getElementById('time-value').innerHTML = '00:00:00:00';
+  document.getElementById('time-value').innerHTML = '00:00:00.00';
+ }
+
+ function findTIME() {
+   startDate = new Date();
+   startTIME();
+   init = 1;
+
  }
 
  function startTIME() {
@@ -26,22 +30,16 @@ function trim(string) {
   if (m<10) m='0'+m;
   if (s<10) s='0'+s;
   if (ms<10) ms='0'+ms;
-  if (init == 1) document.getElementById('time-value').innerHTML = h + ':' + m + ':' + s + ':' + ms;
+  if (init == 1) document.getElementById('time-value').innerHTML = h + ':' + m + ':' + s + '.' + ms;
   timerId = setTimeout("startTIME()", 1);
  }
 
- function findTIME() {
-  if (init == 0) {
-   startDate = new Date();
-   startTIME();
-   init = 1;
-  }
-  else {
-   var str = trim(document.getElementById('time-value').innerHTML);
-   
-  }
+ function pauseTIME() {
+    clearInterval(timerId);
  }
 
- function stopTIME() {
-   clearInterval(timerId);
- }
+ function continueTIME() {
+  startDate = new Date();
+  clearInterval(timerId);
+  timerId = setTimeout("startTIME()", 1);
+  }

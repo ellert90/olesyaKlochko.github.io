@@ -26,7 +26,8 @@ body {
 }
 
 .form__button-start,
-.form__button-stop,
+.form__button-pause,
+.form__button-continue,
 .form__button-clear
  {
 	cursor: pointer;
@@ -35,12 +36,13 @@ body {
 	box-shadow: inset 0px 20px 20px #ffffff;
 	border-radius: 6px;
 	padding: 4px 14px;
-	width: 150px;
+	width: 110px;
   margin: 20px 0 20px 21px;
 
 }
 .form__button-start:hover,
-.form__button-stop:hover,
+.form__button-pause:hover,
+.form__button-continue:hover,
 .form__button-clear:hover {
   background: #acaeb3;
 }

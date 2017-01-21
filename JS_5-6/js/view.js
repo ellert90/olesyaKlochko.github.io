@@ -12,7 +12,8 @@ div.appendChild(form); // вставила форму в div
 var easyTimer = {
      time_value:   createFormElem('p', 'time-value', 'txt__time-value', '', '', '00:00:00.00' ),
      start_button: createFormElem('input', 'start', 'form__button-start', 'button', 'Start', '' ),
-     stop_button: createFormElem('input', 'stop', 'form__button-stop', 'button', 'Stop', '' ),
+     pause_button: createFormElem('input', 'pause', 'form__button-pause', 'button', 'Pause', '' ),
+     continue_button: createFormElem('input', 'continue', 'form__button-continue', 'button', 'Continue', '' ),
      clear_button: createFormElem('input', 'clear', 'form__button-clear', 'button', 'Clear', '' )
 };
 
