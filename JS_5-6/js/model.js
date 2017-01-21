@@ -38,7 +38,7 @@ function trim(string) {
   }
   else {
    var str = trim(document.getElementById('time-value').innerHTML);
-   clearField();
+   
   }
  }
 

@@ -26,7 +26,7 @@ body {
 }
 
 .form__button-start,
-.form__button-pause,
+.form__button-stop,
 .form__button-clear
  {
 	cursor: pointer;
@@ -40,7 +40,7 @@ body {
 
 }
 .form__button-start:hover,
-.form__button-pause:hover,
+.form__button-stop:hover,
 .form__button-clear:hover {
   background: #acaeb3;
 }
