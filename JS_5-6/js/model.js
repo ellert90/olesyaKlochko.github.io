@@ -1,5 +1,6 @@
  var init = 0;
  var startDate;
+ var stopDate;
  var timerId;
 
 
@@ -19,6 +20,7 @@
  function startTIME() {
   var thisDate = new Date();
   var t = thisDate.getTime() - startDate.getTime();
+
   var ms = t%1000; t-=ms; ms=Math.floor(ms/10);
   t = Math.floor (t/1000);
   var s = t%60; t-=s;
@@ -32,14 +34,17 @@
   if (ms<10) ms='0'+ms;
   if (init == 1) document.getElementById('time-value').innerHTML = h + ':' + m + ':' + s + '.' + ms;
   timerId = setTimeout("startTIME()", 1);
+
  }
 
  function pauseTIME() {
+    stopDate = new Date();
     clearInterval(timerId);
  }
 
  function continueTIME() {
-  startDate = new Date();
+  var nowDate = new Date();
+  startDate = new Date(nowDate.getTime() - (stopDate - startDate));
   clearInterval(timerId);
   timerId = setTimeout("startTIME()", 1);
   }
