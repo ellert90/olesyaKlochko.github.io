@@ -5,10 +5,10 @@
 
 .main {
   width: 600px;
-  height: 233px;
   background: pink;
   margin: 10px auto;
   border-radius: 0 0 6px 6px;
+  padding-bottom: 15px;
 }
 
 .main__menu {
@@ -38,6 +38,10 @@ border-bottom: none;
   background: #33CCCC;
 }
 
+.main__item_1 {
+  background: #33CCCC;
+}
+
 .main__link {
   width: 100px;
   height: 20px;
@@ -47,7 +51,10 @@ border-bottom: none;
 
 
 .main__container {
-
+   border: 1px solid grey;
+   margin: 15px;
+   margin-top: 20px;
+   border-radius: 0 0 6px 6px;
 }
 
 .main__box-text {
