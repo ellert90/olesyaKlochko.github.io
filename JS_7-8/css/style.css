@@ -34,8 +34,12 @@ border-bottom: none;
   background: #ccc;
 }
 
-.main__item_1 {
+.main__item_active {
   background: #33CCCC;
+}
+
+.main__item_no-active {
+  background: #999;
 }
 
 .main__link {
