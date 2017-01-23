@@ -34,10 +34,6 @@ border-bottom: none;
   background: #ccc;
 }
 
-.main__item:active {
-  background: #33CCCC;
-}
-
 .main__item_1 {
   background: #33CCCC;
 }
@@ -57,19 +53,16 @@ border-bottom: none;
    border-radius: 0 0 6px 6px;
 }
 
-.main__box-text {
-  border: 1px solid grey;
-  margin: 10px;
-  border-radius: 4px;
-}
-
-
 .main__text {
  font-family: sans-serif;
  padding: 20px;
+ display: none;
 }
 
-.main__text_2,
-.main__text_3 {
-  display: none;
+.main__text_active {
+  display: inherit;
+}
+
+.main__text_no-active {
+   display: none;
 }
