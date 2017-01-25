@@ -8,7 +8,12 @@ $('.form__input').hover(function(e) {
    e.preventDefault();
    span.hide();
    $(this).next('span').show();
-});
+}, function(e) {
+   e.preventDefault();
+   span.hide();
+  //  $(this).next('span').show();
+}
+);
 
 $('.form__input').focus(function(e) {
    e.preventDefault();
