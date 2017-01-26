@@ -43,10 +43,12 @@ border-bottom: none;
 }
 
 .main__link {
-  width: 100px;
-  height: 20px;
+  display: inline-block;
   text-decoration: none;
   color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 6px 6px 0 0;
 }
 
 

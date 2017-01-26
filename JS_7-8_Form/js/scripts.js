@@ -11,14 +11,14 @@ $('.form__input').hover(function(e) {
 }, function(e) {
    e.preventDefault();
    span.hide();
-  //  $(this).next('span').show();
+
 }
 );
 
 $('.form__input').focus(function(e) {
    e.preventDefault();
    span.hide();
-   $(this).next('span').show();
+   $(this).next().show();
 });
 
 $(".form__button").on("click", function(e) {
