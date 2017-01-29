@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+  background: #cecece;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
+
+.fancyselect-wrapper {
+  margin: 30px;
+  margin-top: 120px;
+}
+
+.checkbox-css {
+  margin: 30px;
+  margin-top: 180px;
+}
+
+
+
+/* css checkbox*/
+
+.css-input {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.css-label {
+	cursor: pointer;
+}
+.css-label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url("../img/checkbox-2.png");
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+.css-input:checked + .css-label:after {
+background-position: 0 -17px;
+}
+.css-label:hover:after {
+background-position: 0 -34px;
+}
+.css-input:checked + .css-label:hover:after {
+background-position: 0 -51px;
+}
+
+.menu {
+  background: #ddd;
+  padding: 20px;
+  position: relative;
+
+}
+
+.menu li {
+  list-style: none;
+  display: inline-block;
+  background: #3993a1;
+  width: 120px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 2px 29px 0 0;
+}
+
+.menu li:hover {
+  background: #b4c2c4;
+  color: #626667;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+span {
+  font-size: 12px;
+}
+
+.submenu {
+  margin: 10px;
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 278px;
+  border-radius: 3px;
+
+}
+
+.submenu>li {
+  display: block;
+  background: #90d1db;
+  height: 30px;
+  width: 100px;
+  line-height: 30px;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.submenu a {
+  font-size: 14px;
+
+}

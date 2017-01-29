@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>JS_9-10</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+   <link rel="stylesheet" type="text/css" href="css/fancySelect.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="js/jquery.jcarousel.min.js"></script>
+   <script src="js/fancySelect.js"></script>
+   <script src="js/scripts.js"></script>
+ </head>
+ <body>
+   <div class="nav">
+     <ul class="menu">
+      <li>
+        <a href="#">List 1</a>
+      </li>
+      <li>
+        <a href="#">List 2</a>
+      </li>
+      <li id="sub">
+      <a href="#">List 3<span> &#9660;</span></a>
+         <ul class="submenu">
+           <li><a href="">Text 3.1</a></li>
+           <li><a href="">Text 3.2</a></li>
+           <li><a href="">Text 3.3</a></li>
+           <li><a href="">Text 3.4</a></li>
+           <li><a href="">Text 3.5</a></li>
+         </ul>
+       </li>
+       <li>
+         <a href="#">List 4</a>
+       </li>
+       <li>
+      <a href="#">List 5</a>
+       </li>
+   </ul>
+    </div>
+
+  <div class="wrapper">
+   <div class="fancyselect-wrapper">
+     <select class="basic">
+       <option value="">Select something...</option>
+       <option>Check 1</option>
+       <option>Check 2</option>
+       <option>Check 3</option>
+       <option>Check 4</option>
+       <option>Check 5</option>
+     </select>
+   </div>
+   <div class="checkbox-wrapper">
+     <div class="checkbox-css">
+      <div>
+       <input class="css-input" type="checkbox" id="test-check1">
+        <label class="css-label" for="test-check1">Check 1:</label>
+      </div>
+      <div>
+       <input class="css-input" type="checkbox" id="test-check2">
+        <label class="css-label" for="test-check2">Check 2:</label>
+      </div>
+      <div>
+       <input class="css-input" type="checkbox" id="test-check3">
+        <label class="css-label" for="test-check3">Check 3:</label>
+      </div>
+     </div>
+   </div>
+   <div class="jcarousel-wrapper">
+      <div class="jcarousel">
+          <ul>
+            <li><img src="img/img1.jpg"></li>
+            <li><img src="img/img2.jpg"></li>
+            <li><img src="img/img3.jpg"></li>
+            <li><img src="img/img4.jpg"></li>
+            <li><img src="img/img5.jpg"></li>
+          </ul>
+        </div>
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+    </div>
+  </div>
+</body>
+</html>
