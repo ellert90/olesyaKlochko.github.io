@@ -31,9 +31,16 @@
     float: left;
 }
 
+
+
 .fancyselect-wrapper {
   margin: 30px;
   margin-top: 120px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .checkbox-css {

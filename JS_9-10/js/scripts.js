@@ -54,8 +54,7 @@ $(function() {
                             }, 200 );
                           });
 
-
-
+            $('.jquery-input').styler();
 
 
     });
