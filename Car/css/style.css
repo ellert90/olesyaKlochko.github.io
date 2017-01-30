@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+  width: 800px;
+  position: relative;
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+}
+
+
+.animation {
+  box-sizing: border-box;
+  position: relative;
+  /*width: 80px;
+  height: 40px;*/
+  /*background: green;*/
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.css-box {
+  left: 0;
+  transition: all 1s;
+}
+
+.css-box-animated {
+  left: 400px;
+}
