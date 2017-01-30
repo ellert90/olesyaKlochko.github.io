@@ -29,10 +29,10 @@ $(function() {
       var $link = $('#sub');
       $link.hover(
             function(){
-                $(this).children('.submenu').slideDown(500);
+                $(this).children('.submenu').stop().slideDown(500);
             },
             function(){
-                $(this).children('.submenu').slideUp(500);
+                $(this).children('.submenu').stop().slideUp(500);
             });
 
             $("#color-animate").click(function(){
@@ -44,14 +44,14 @@ $(function() {
                     var $subLink = $('.submenu>li');
                     $subLink.hover(
                           function(){
-                              $(this).animate({
+                              $(this).stop().animate({
                             		backgroundColor:"pink",
-                                }, 500 );
+                              }, 200 );
                           },
                           function(){
-                            $(this).animate({
+                            $(this).stop().animate({
                               backgroundColor:"#90d1db",
-                              }, 500 );
+                            }, 200 );
                           });
 
 
