@@ -35,5 +35,27 @@ $(function() {
                 $(this).children('.submenu').slideUp(500);
             });
 
+            $("#color-animate").click(function(){
+                    $(this).animate({
+                           backgroundColor: "pink"
+                      }, 500 );
+                    });
+
+                    var $subLink = $('.submenu>li');
+                    $subLink.hover(
+                          function(){
+                              $(this).animate({
+                            		backgroundColor:"pink",
+                                }, 500 );
+                          },
+                          function(){
+                            $(this).animate({
+                              backgroundColor:"#90d1db",
+                              }, 500 );
+                          });
+
+
+
+
 
     });

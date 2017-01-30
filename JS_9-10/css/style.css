@@ -131,3 +131,10 @@ span {
   font-size: 14px;
 
 }
+
+#color-animate {
+  width: 40px;
+  height: 40px;
+  background-color:#0CF;
+
+}
