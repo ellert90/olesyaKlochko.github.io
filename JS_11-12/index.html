@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=no">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>JS_11-12</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+   <script src="js/tmpl.js"></script>
+   <script src="js/carusel.js"></script>
+   <script src="js/scripts.js"></script>
+   </head>
+ <body>
+   <div class="carusel-plagin">
+     <div class="carousel-arrow-left"><span>Влево</span></div>
+     <div class="carousel-hider">
+        <ul class="carousel-list">
+            <li class="carousel-element"><img src="img/image1.jpg"><p class="carousel-title">Описание 1</p></li>
+            <li class="carousel-element"><img src="img/image2.jpg"><p class="carousel-title">Описание 2</p></li>
+            <li class="carousel-element"><img src="img/image3.jpg"><p class="carousel-title">Описание 3</p></li>
+            <li class="carousel-element"><img src="img/image4.jpg"><p class="carousel-title">Описание 4</p></li>
+            <li class="carousel-element"><img src="img/image5.jpg"><p class="carousel-title">Описание 5</p></li>
+            <li class="carousel-element"><img src="img/image6.jpg"><p class="carousel-title">Описание 6</p></li>
+            <li class="carousel-element"><img src="img/image7.jpg"><p class="carousel-title">Описание 7</p></li>
+            <li class="carousel-element"><img src="img/image8.jpg"><p class="carousel-title">Описание 8</p></li>
+       </ul>
+     </div>
+     <div class="carousel-arrow-right"><span>Вправо</span></div>
+   </div>
+   <div class="shablon">
+      <script type="text/template" id="top_it">
+         <% for (var i = 0; i < data.length; i++ ) { %>
+        <div class="shablon__item">
+          <div class="shablon__logo">
+           <img class="shablon__logo-img" src="<%= data[i].img %>">
+           </div>
+          <div class="shablon__info">
+              <h3 class="shablon__title"><%= data[i].title %></h3>
+              <p class="shablon__description"><%= data[i].description %></p>
+              <a class="shablon__link" href="<%= data[i].site %>">Read more...</a>
+            </div>
+          </div>
+         <% } %>
+   </script>
+   </div>
+ </body>
+</html>

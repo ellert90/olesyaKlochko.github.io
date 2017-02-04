@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.shablon__item {
+  width: 550px;
+  background: pink;
+  height: 150px;
+  border-radius: 1px;
+  margin-top: 10px;
+  background: linear-gradient(to bottom,rgba(191, 216, 220, 0.28),#fff);
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+.shablon__logo {
+  position: relative;
+}
+
+.shablon__link {
+  text-decoration: none;
+  color: #f7a461;
+  padding-left: 230px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.shablon__link:hover {
+  color: grey;
+}
+
+.shablon__logo-img {
+  margin-top: 30px;
+  margin-left: 20px;
+  border: 1px solid #dddddd;
+}
+
+.shablon__info {
+  margin-left: 10px;
+}
+
+.shablon__title {
+  margin-left: 5px;
+  color: #f7a461;
+  font-weight: bold;
+}
+
+.shablon__description {
+  font-size: 14px;
+  text-align: justify;
+  padding: 10px;
+  color: #444;
+}
+
+
+
+
+.carusel-plagin
+ {
+  margin: 10px auto;
+  height: 170px;
+  padding-top: 10px;
+  border: 1px solid lightgrey;
+  box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+
+.carousel-element {
+    display: block;
+    margin-right: 20px;
+    float: left;
+
+}
+
+.carousel-element img {
+    max-width: 200px;
+    border: 1px solid black;
+}
+
+.carousel-title {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.carousel-list {
+    list-style: none;
+    width: 10000px;
+    padding: 0;
+    position: relative;
+}
+
+
+.carousel-hider {
+    width: 660px;
+    overflow: hidden;
+    float: left;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+}
+
+.carousel-arrow-left,
+.carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: #f7a461;
+    padding: 5px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.carousel-arrow-left:hover,
+.carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+
+.carousel-arrow-right {
+    margin-left: 15px;
+}
