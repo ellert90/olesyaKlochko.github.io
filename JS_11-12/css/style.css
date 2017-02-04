@@ -71,10 +71,12 @@ body {
 .carusel-plagin
  {
   margin: 10px auto;
-  height: 170px;
   padding-top: 10px;
   border: 1px solid lightgrey;
   box-shadow: 0 0 7px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 
@@ -107,21 +109,15 @@ body {
 .carousel-hider {
     width: 660px;
     overflow: hidden;
-    float: left;
-}
-
-.carousel-arrow-left, .carousel-arrow-right {
-    float: left;
 }
 
 .carousel-arrow-left,
 .carousel-arrow-right {
-    float: left;
+
     display: block;
     border: 1px solid grey;
     background-color: #f7a461;
     padding: 5px;
-    margin-top: 50px;
     border-radius: 5px;
 }
 
