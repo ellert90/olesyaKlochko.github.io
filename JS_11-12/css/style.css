@@ -121,11 +121,11 @@ body {
     border-radius: 5px;
 }
 
-.carousel-arrow-left:hover,
+/*.carousel-arrow-left:hover,
 .carousel-arrow-right:hover {
     cursor: pointer;
     background-color: grey;
-}
+}*/
 
 .carousel-arrow-left {
     margin-right: 25px;

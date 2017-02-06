@@ -1,6 +1,11 @@
 $(function() {
 // my own plagin Carusel
-$('carousel-list').carusel();
+$('carousel-list').carusel({
+  'font-size': '16px',
+  backgroundHover: 'grey',
+  background: '#f7a461',
+  cursor: 'pointer'
+});
 
 // my shablon
 var html = $('#top_it').html();
