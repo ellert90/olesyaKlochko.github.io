@@ -21,7 +21,7 @@ let testInfo = [
 }
 ];
 
-var answers = [true, false, false, false, false, true, true, false, false, false];
+var answers = [true, false, false, false, false, true, true, false, false];
 
 localStorage.setItem('infoObj', JSON.stringify(testInfo));
 
@@ -30,10 +30,10 @@ let infoPage = localStorage.getItem('infoObj');
 testInfo = JSON.parse(infoPage);
 
 const page = obj => `
-   <p class="form__title">Тест</p>
+   <p class="title">Тест</p>
    <form id="form-test">
      ${obj.map(obj => `
-       <div class='block'>
+       <div class='form__block'>
        <p class="form__question">${obj.title}</p>
        <label class="form__answer"><input id="form__checkbox" type='checkbox'><i>${obj.ask1}</i></label>
        <label class="form__answer"><input id="form__checkbox" type='checkbox'><i>${obj.ask2}</i></label>
@@ -55,11 +55,23 @@ function showResults() {
 
   var elems = document.getElementsByTagName("input");
   var res = Array.from(elems, x => x.checked);
+  var tmp = answers.length;
 
-    if (answers === res) {
-      alert('Все правильно');
+  var result = compareArr(answers, res, tmp);
+
+     if(result) {
+        alert('Молодец! Все правильно! Пора ехать в путешествие!');
     } else {
-      alert('Еще раз!');
-    }
-
+       alert('Надо учить географию!!!!');
+  }
 }
+
+  function compareArr(arr1, arr2, arrayLength) {
+      for (var i = 0; i < arrayLength; i++) {
+          if (arr1[i] !== arr2[i]) {
+              return false;
+          }
+      }
+
+      return true;
+  }
