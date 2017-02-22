@@ -6,18 +6,18 @@ module.exports = function(grunt) {
             separator: ''
           },
           dist_css: {
-            src: ['src/css/*.css'],
-            dest: 'dist/style.main.css'
+            src: ['app/src/css/*.css'],
+            dest: 'app/dist/style.main.css'
           },
           dist_js: {
-            src: ['src/js/*.js'],
-            dest: 'dist/script.main.js'
+            src: ['app/src/js/*.js'],
+            dest: 'app/dist/script.main.js'
           }
         },
     uglify: {
       dist_js: {
-        src: ['dist/script.main.js'],
-        dest: 'dist/script.main.min.js'
+        src: ['app/dist/script.main.js'],
+        dest: 'app/dist/script.main.min.js'
       }
     }
   });
