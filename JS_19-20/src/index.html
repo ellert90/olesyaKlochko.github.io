@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>JS_19-20</title>
+</head>
+<body>
+  <div class="wrapper">
+   <div class="wrapper wrapper_main">
+     <div class="logo-social">
+       <div class="logo"><a href="#"><img src="img/logo.png">
+        </a>
+       </div>
+       <nav class="social-nav">
+         <a class="social-nav__link social-nav__link_fb" href="#"></a>
+         <a class="social-nav__link social-nav__link_twit" href="#"></a>
+         <a class="social-nav__link social-nav__link_url" href="#"></a>
+         <a class="social-nav__link social-nav__link_in" href="#"></a>
+         <a class="social-nav__link social-nav__link_skype" href="#"></a>
+       </nav>
+      </div>
+     <div class="nav-search">
+       <nav>
+         <ul class="main-nav">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">home</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">features</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">services</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">news</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">shop</a></li>
+          </ul>
+       </nav>
+       <div class="search">
+         <form class="search__form">
+             <input class="search__request" type="text" size="45" placeholder="Search...">
+             <input class="search__button" type="image" src="img/sprite_search.png"</input>
+           </form>
+       </div>
+      </div>
+     <div class="3"></div>
+     <div id="advantages">
+       <script type="text/template" id="dataAdvantages">
+           <% for (var i = 0; i < data.length; i++ ) { %>
+          <div class="advantages__block">
+            <div><p class="advantages__number"><%= data[i].number %></p></div>
+            <div class="advantages__info">
+              <i class="advantages__icon <%= data[i].img %>"></i>
+              <p class="advantages__title"><%= data[i].title %></p>
+              <p class="advantages__desc"><%= data[i].desc %></p>
+              <div class="advantages__link-arrow">
+                <a class="advantages__link"><%= data[i].link %></a>
+                <i class="advantages__icon advantages__icon_arrow"></i>
+               </div>
+             </div>
+           </div>
+           <% } %>
+        </script>
+     </div>
+   </div>
+   <div class="wrapper wrapper_services">
+     <div id="services">
+     <script type="text/template" id="dataServices">
+         <% for (var i = 0; i < data.length; i++ ) { %>
+        <div class="services__block">
+          <div class="services__img">
+           <img src="<%= data[i].img %>">
+           </div>
+          <p class="services__title"><%= data[i].title %></p>
+            </div>
+         <% } %>
+      </script>
+     </div>
+   </div>
+   <div class="wrapper wrapper_news-banners">
+     <div class="news-banners">
+        <div id="news">
+           <script type="text/template" id="dataNews">
+              <p class="news__name">Latest News</p>
+              <% for (var i = 0; i < data.length; i++ ) { %>
+                <div class="news__block">
+                  <div class="news__date">
+                    <p class="news__month"><%= data[i].dateMonth %></p>
+                    <p class="news__number"><%= data[i].dateNumber %></p>
+                    <img src="<%= data[i].img %>">
+                   </div>
+                  <div class="news__info">
+                     <a class="news__title" href="#"><%= data[i].title %></a>
+                     <p class="news__author">by <a class="news__author-link" href="#"><%= data[i].author %></a> Comments (<a class="news__author-link" href="#"><%= data[i].amount %></a>)</p>
+                     <p class="news__text"><%= data[i].text %></p>
+                   </div>
+                 </div>
+              <% } %>
+             </script>
+          </div>
+        <div class="banners">
+            <p class="banners__name">Banners Place</p>
+            <div class="accordion-container">
+              <div class="accordion">
+                <div class="accordion__item accordion__item_active">
+                  <a href="#" class="accordion__link accordion__link_active link">
+                    <i class="accordion__icon accordion__icon_active fa fa-minus"></i> Accordion Panel 1
+                  </a>
+
+                  <div class="accordion__content accordion__content_active">
+                    <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim
+                      ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo</p>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <a href="#" class="accordion__link link">
+                    <i class="accordion__icon fa fa-plus"></i> Accordion Panel 2
+                  </a>
+
+                  <div class="accordion__content">
+                    <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim
+                      ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo</p>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <a href="#" class="accordion__link link">
+                    <i class="accordion__icon fa fa-plus"></i> Accordion Panel 3
+                  </a>
+
+                  <div class="accordion__content">
+                    <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim
+                      ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo</p>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <a href="#" class="accordion__link link">
+                    <i class="accordion__icon fa fa-plus"></i> Accordion Panel 4
+                  </a>
+
+                  <div class="accordion__content">
+                    <p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim
+                      ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo</p>
+                  </div>
+                </div>
+                </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="wrapper wrapper_brends">
+     <div class="brends">
+       <div class="brends__item"><a class="brends__link" href="#"><img src="img/1_brend.png"></a></div>
+       <div class="brends__item"><a class="brends__link" href="#"><img src="img/2_brend.png"></a></div>
+       <div class="brends__item"><a class="brends__link" href="#"><img src="img/3_brend.png"></a></div>
+       <div class="brends__item"><a class="brends__link" href="#"><img src="img/4_brend.png"></a></div>
+       <div class="brends__item"><a class="brends__link" href="#"><img src="img/5_brend.png"></a></div>
+       <div class="brends__item"><a class="brends__link" href="#"><img src="img/6_brend.png"></a></div>
+
+     </div>
+   </div>
+   <div class="wrapper wrapper_full-nav">
+     <div id="full-nav">
+     <script type="text/template" id="dataFullNav">
+         <% for (var i = 0; i < data.length; i++ ) { %>
+        <nav class="full-nav__block">
+          <p class="full-nav__title"><%= data[i].title %></p>
+          <ul>
+            <li class="full-nav__item"><a class="full-nav__link" href="#"><%= data[i].link_1 %></a></li>
+            <li class="full-nav__item"><a class="full-nav__link" href="#"><%= data[i].link_2 %></a></li>
+            <li class="full-nav__item"><a class="full-nav__link" href="#"><%= data[i].link_3 %></a></li>
+            <li class="full-nav__item"><a class="full-nav__link" href="#"><%= data[i].link_4 %></a></li>
+           </ul>
+        </nav>
+         <% } %>
+      </script>
+     </div>
+   </div>
+   <div class="wrapper wrapper_footer">
+     <div class="footer">
+       <div class="contacts">
+         <p class="contacts__adress">BuildHomeLtd. Street Name 123 23 45 Cityname</p>
+         <p class="contacts__tell">+123 900 123 456</p>
+         <p class="contacts__mail">info@buildhome.web</p>
+       </div>
+       <div><p class="footer__copyright">2014 Build Home</p></div>
+       </div>
+     </div>
+   </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src='https://use.fontawesome.com/2936dfc5b8.js'></script>
+<script src="js/main.js"></script>
+</body>
+</html>
