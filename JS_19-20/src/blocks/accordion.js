@@ -1,8 +1,8 @@
 $(function() {
   (function() {
-    let $links = $('.accordion__link'),
-      $icons = $('.accordion__icon'),
-      $content = $('.accordion__content');
+    var $links = $('.accordion__link'),
+        $icons = $('.accordion__icon'),
+        $content = $('.accordion__content');
 
     $links.hover(function() {
       $(this).find('.accordion__icon').addClass('accordion__icon_hover');

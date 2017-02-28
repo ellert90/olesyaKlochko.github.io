@@ -1,0 +1,28 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: yellow;
+$primary-size: 50px;
+$primary-bckg:  grey;
+
+body {
+  font: 100% $font-stack;
+  background-color: $primary-bckg;
+}
+
+.nav {
+
+
+
+width: 400px;
+margin: 0 auto;
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    @include border-radius(10px);
+  }
+}
