@@ -1,0 +1,70 @@
+.test-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.test-result {
+  position: absolute;
+  min-width: 500px;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -8rem;
+  border-radius: 7px;
+  box-shadow: 0 0 1rem #000;
+  line-height: 1rem;
+  background-color: #eee;
+  color: #080808;
+
+  header {
+    padding: 1rem;
+    border-bottom: 1px solid #999;
+    font-family: sans-serif;
+  }
+
+  footer {
+    padding: 1rem;
+    border-top: 1px solid #999;
+
+  }
+
+  footer::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  footer .test-modal__click {
+    float: right;
+    background-color: #f27b42;
+    font-family: sans-serif;
+    padding: 0.5rem 1rem;
+  }
+
+}
+
+
+.test-message {
+  padding: 1rem;
+  min-height: 9rem;
+  font-family: sans-serif;
+}
+
+.btn {
+  border-radius: 7px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0.1rem #000;
+}
+
+.btn:active, .btn:visited {
+  color: inherit;
+}
