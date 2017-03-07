@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>TODOlist</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="js/tmpl.js"></script>
+   <script src="js/scripts.js"></script>
+   </head>
+ <body>
+   <script type="text/template" id="wrapper-template">
+     <div class="wrapper">
+       <ul class="item-list">
+          </ul>
+       <div class="controlls">
+         <input type="text" class="item-value">
+         <button class="item-add">Add</button>
+       </div>
+     </div>
+ </script>
+ <script type="text/template" id="list-template">
+   <% for (var i = 0; i < data.length; i++ ) { %>
+   <li class="item">
+     <input type="text" class="item-edit" placeholder="<%= data[i] %>">
+     <a href="#" class="edit-btn">Ok</a>
+     <p class="textToDo"><%= data[i] %></p>
+     <span data-value="<%= data[i] %>" class="item-delete"> x </span>
+    </li>
+   <% } %>
+ </script>
+ <!-- <script type="text/template" id="edited-template">
+   <input type="text" class="edit-item-value">
+ </script> -->
+ </body>
+</html>
