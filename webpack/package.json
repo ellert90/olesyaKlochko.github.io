@@ -1,0 +1,19 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "olesya",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.4",
+    "style-loader": "^0.13.2"
+  }
+}
