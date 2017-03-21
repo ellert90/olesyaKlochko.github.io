@@ -1,0 +1,32 @@
+<main class="main">
+    <div class="main__container">
+      <h2 class="main__title">How Urlaubsgluck works?</h2>
+      <div class="main__sliders">
+        //= sliders.html
+      </div>
+      <h2 class="main__title">Meet a partner for your best holiday</h2>
+      <div id="partner">
+        <script type="text/template" id="dataPartner">
+          <% for (var i = 0; i < data.length; i++ ) { %>
+            <div class="partner__block">
+                <div class="partner__img">
+                  <img src="<%= data[i].img %>">
+                  <i class="partner__icon <%= data[i].icon %>"></i>
+                 </div>
+                 <a class="partner__name"><%= data[i].name %></a>
+                 <p class="partner__desc"><%= data[i].desc %></p>
+              </div>
+          <% } %>
+         </script>
+      </div>
+      <input type="submit" class="btn btn_white" value="See other partners">
+      <h2 class="main__title">Discover holiday activity ideas</h2>
+      <div class="main_activity"></div>
+      <h2 class="main__title">Discover holiday activity ideas</h2>
+      <p class="main__info">Hi! What are your holiday interests?</p>
+      <form class="main__search">
+        <input type="text" class="search__input" placeholder="Enter your interests">
+        <input type="submit" class="btn btn_red" value="Search partners">
+      </form>
+    </div>
+</main>
