@@ -2,7 +2,8 @@ var btn = document.getElementById('search__button');
 btn.addEventListener("click", showResults);
 
 
-function showResults() {
+function showResults(e) {
+       e.preventDefault();
        var word = document.getElementById("search__request").value;
               // Удаляем сетку картинок
        document.getElementById('grid').remove();

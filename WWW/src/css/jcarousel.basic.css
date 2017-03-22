@@ -205,22 +205,24 @@
   }
 
 
-  .jcarousel li img {
+    .jcarousel li img {
       border-radius: 5px;
       width: 300px;
       height: 400px;
-  }
+     }
 
-  .jcarousel li a {
-    top: 213px;
-  }
-  .jcarousel li h3 {
-    top: 251px;
-  }
-  
-  .jcarousel li p{
-    top: 297px;
-  }
+    .jcarousel li a {
+      top: 213px;
+    }
+
+    .jcarousel li h3 {
+      top: 251px;
+    }
+
+    .jcarousel li p{
+      top: 297px;
+      width: 90%;
+    }
 
 
 
