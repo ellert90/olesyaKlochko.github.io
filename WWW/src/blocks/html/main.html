@@ -24,8 +24,11 @@
       <div id="gridContainer">
          <script type="text/template" id="dataGrid">
            <div id="grid">
-             <% for (var i = 0; i < 7; i++ ) { %>
-              <img class="grid-item persent-size" src="<%= data.results[i].media[0].gif.url %>">
+             <% for (var i = 0; i < 9; i++ ) { %>
+               <figure class="grid-item persent-size">
+                 <img src="<%= data.results[i].media[0].gif.url %>">
+                 <figcaption class="grid-title"><%= data.results[i].title %></figcaption>
+               </figure>
              <% } %>
            </div>
           </script>

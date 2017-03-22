@@ -8,6 +8,9 @@
   width: 300px;
 
 }
+.grid-link {
+  position: relative;
+}
 
 #search__button {
       border: 2px solid #ff4d4f;
@@ -17,10 +20,30 @@
   border-radius: 3px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   margin: 2px auto;
+  position: relative;
+}
+
+.grid-title {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: #fff;
+  font-family: 'Montserrat Bold';
+  font-size: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 40%;
+
+
 }
 
 .persent-size {
     width: 99%;
+}
+
+.persent-size img {
+    width: 99%;
+    border-radius: 3px;
 }
 
 @media (min-width: 768px) and (max-width: 939px) {
@@ -48,7 +71,7 @@
   }
 
   .persent-size {
-      width: 32.73%;
+      width: 31.73%;
   }
 
 }

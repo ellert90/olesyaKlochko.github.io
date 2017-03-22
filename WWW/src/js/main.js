@@ -72,7 +72,7 @@ function showResults() {
 
 
 function showImgs(word) {
-        word = 'people';
+        word = 'cat';
         var searchRequest = new XMLHttpRequest();
         searchRequest.open('GET', 'https://api.tenor.co/v1/search?tag=' + word + '&key=LIVDSRZULELA');
         searchRequest.send();
