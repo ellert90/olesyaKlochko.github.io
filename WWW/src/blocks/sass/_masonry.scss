@@ -1,6 +1,11 @@
+#gridContainer {
+      margin-top: 16px;
+      margin-bottom: -16px;
+}
+
 #grid {
   margin: 0 auto;
-  width: 320px;
+  width: 300px;
 
 }
 
@@ -15,7 +20,7 @@
 }
 
 .persent-size {
-    width: 100%;
+    width: 99%;
 }
 
 @media (min-width: 768px) and (max-width: 959px) {

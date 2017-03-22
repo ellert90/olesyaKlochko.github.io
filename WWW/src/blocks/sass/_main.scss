@@ -17,8 +17,9 @@
    color: #333;
    font-family: 'Montserrat Bold';
    font-size: 22px;
-   margin-top: 40px;
+   margin-top: 38px;
    text-align: center;
+   width: 95%;
 
   }
 
@@ -41,6 +42,8 @@
        display: flex;
        flex-direction: column;
        margin: 0 auto;
+       margin-top: 13px;
+       margin-bottom: -9px;
 
    }
 
@@ -80,6 +83,10 @@
 
 }
 
+.btn_mr {
+  margin-top: -15px;
+}
+
 #partner {
   display: flex;
   flex-direction: column;
@@ -106,7 +113,7 @@
   }
 
   &__block {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     width: 220px;
   }
 
@@ -127,7 +134,7 @@
     font-family: 'Roboto Light';
     font-size: 14px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 19px;
 
   }
 

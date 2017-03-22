@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: -27px;
 
     &__link {
       color: #fff;
@@ -38,6 +39,7 @@
       line-height: 32px;
       text-align: center;
       border: 2px solid transparent;
+      text-transform: capitalize;
     }
 
     &__link:hover {
@@ -50,7 +52,7 @@
 }
 
 .logo {
-  margin-top: 115px;
+  margin-top: 121px;
   margin-bottom: 40px;
 
   &__name {
@@ -81,12 +83,25 @@ font-size: 30px;
 text-transform: uppercase;
 }
 
+.header__title_mr {
+      margin-top: -6px;
+    }
+
+.header__title_mr6 {
+          margin-top: 6px;
+        }
+
+
+
 .header__text {
   color: #fff;
   font-family: 'Roboto Light';
   font-size: 18px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 13px;
+  margin-bottom: 15px;
+  width: 220px;
+  text-align: center;
+  line-height: 19px;
 
 }
 
@@ -110,6 +125,7 @@ input[type=submit] {
 
 .btn_red {
   background-color: #ff4d4f;
+  padding-top: 6px;
 }
 
 .btn_red:hover {
