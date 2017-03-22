@@ -4,7 +4,7 @@
 
    &__container {
      min-width: 300px;
-     max-width: 960px;
+     max-width: 940px;
      width: 100%;
      height: 100%;
      margin: 0 auto;
@@ -73,7 +73,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 140px;
+
+  margin-bottom: 226px;
 }
 
 .header__title {
@@ -99,7 +100,7 @@ text-transform: uppercase;
   font-size: 18px;
   margin-top: 13px;
   margin-bottom: 15px;
-  width: 220px;
+  width: 75%;
   text-align: center;
   line-height: 19px;
 
@@ -134,10 +135,12 @@ input[type=submit] {
 }
 
 
-@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 768px) and (max-width: 939px) {
+
   .header__container {
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 59px;
   }
 
   .logo-login {
@@ -146,16 +149,35 @@ input[type=submit] {
        justify-content: space-between;
        align-items: flex-start;
        width: 670px;
+       margin-top: 40px;
       }
 
    .logo {
-     margin-top: 0;
+     margin-top: 8px;
    }
+
+   .header__info {
+         margin-top: 122px;
+   }
+
+   .header__title {
+     font-size: 52px;
+
+   }
+
+   .header__text {
+     font-size: 24px;
+     width: 100%;
+     margin-top: 35px;
+     margin-bottom: 37px;
+   }
+
+
 
 }
 
 
-@media (min-width: 960px) {
+@media (min-width: 940px) {
   .header__container {
     justify-content: space-between;
     align-items: center;
@@ -166,7 +188,7 @@ input[type=submit] {
        flex-direction: row-reverse;
        justify-content: space-between;
        align-items: flex-start;
-       width: 960px;
+       width: 940px;
       }
 
    .logo {

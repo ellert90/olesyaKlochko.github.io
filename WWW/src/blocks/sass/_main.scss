@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     min-width: 300px;
-    max-width: 960px;
+    max-width: 940px;
     width: 100%;
     height: 100%;
     margin-bottom: 40px;
@@ -114,7 +114,7 @@
 
   &__block {
     margin-bottom: 27px;
-    width: 220px;
+    width: 50%;
   }
 
   &__img img {
@@ -141,29 +141,48 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 768px) and (max-width: 939px) {
+
+   .main__container {
+        margin-bottom: 90px;
+   }
 
   .main__sliders {
 
         display: flex;
         flex-direction: row;
+        justify-content: center;
         margin: 40px auto;
-
+        width: 100%;
 
     }
 
+    .main__info {
+      margin-top: 31px;
+    }
+
   #partner {
-    width: 480px;
+    width: 60%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-top: 44px;
+    margin-bottom: 62px;
   }
+
   .main__search {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 25px;
   }
+
+  #search__button {
+    width: 160px;
+    margin-left: 10px;
+  }
+
   .search {
 
     &__input {
@@ -177,28 +196,37 @@
       color: #999;
       font-family: 'Roboto Light';
       font-size: 14px;
-      padding-left: 30px;
+
 
      }
 
     }
     .btn {
-      width: 160px;
+      width: 225px;
       margin-bottom: 9px;
-      margin-left: 9px;
     }
 
+    .btn_parthner {
+      width: 190px;
+      margin-left: -6px;
+    }
+
+    .btn_srch {
+      margin-top: 116px;
+    }
 }
 
 
 
-@media (min-width: 960px) {
+@media (min-width: 940px) {
 
   .main__sliders {
 
         display: flex;
         flex-direction: row;
         margin: 40px auto;
+        width: 100%;
+        justify-content: center;
     }
 
 
