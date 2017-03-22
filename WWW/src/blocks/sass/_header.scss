@@ -181,6 +181,7 @@ input[type=submit] {
   .header__container {
     justify-content: space-between;
     align-items: center;
+    width: 940px;
   }
 
   .logo-login {
@@ -188,10 +189,34 @@ input[type=submit] {
        flex-direction: row-reverse;
        justify-content: space-between;
        align-items: flex-start;
-       width: 940px;
+       width: 100%;
+       margin-top: 40px;
       }
 
    .logo {
-     margin-top: 0;
+     margin-top: 8px;
    }
+
+   .header__info {
+         margin-top: 122px;
+   }
+
+   .header__title {
+     font-size: 52px;
+
+   }
+
+   .header__text {
+     font-size: 24px;
+     width: 100%;
+     margin-top: 35px;
+     margin-bottom: 37px;
+   }
+
+
+
+
+
+
+
 }

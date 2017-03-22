@@ -191,6 +191,38 @@
   }
 
 
+}
+
+@media (min-width: 940px) {
+
+  .jcarousel-wrapper {
+      margin: 10px;
+      position: relative;
+      width: 300px;
+      height: 400px;
+      margin-top: -4px;
+
+  }
+
+
+  .jcarousel li img {
+      border-radius: 5px;
+      width: 300px;
+      height: 400px;
+  }
+
+  .jcarousel li a {
+    top: 213px;
+  }
+  .jcarousel li h3 {
+    top: 251px;
+  }
+
+  .jcarousel li p{
+    top: 297px;
+  }
+
+
 
 
 

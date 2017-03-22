@@ -116,6 +116,12 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    margin-top: 38px;
+  }
+
+  .companies {
+    margin-top: 1px;
+    margin-left: 8px;
   }
 
   .companies__list {
@@ -125,6 +131,14 @@
 
   .companies__item {
     margin-top: 5px;
+  }
+
+  .partners {
+    margin-right: 274px;
+ }
+
+  .copyright {
+    margin-top: 0px;
   }
 
 

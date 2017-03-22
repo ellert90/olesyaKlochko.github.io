@@ -220,6 +220,11 @@
 
 @media (min-width: 940px) {
 
+  .main__container {
+    padding-top: 58px;
+    margin-bottom: 91px;
+  }
+
   .main__sliders {
 
         display: flex;
@@ -235,6 +240,11 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    margin-top: 43px;
+  }
+
+  .partner__desc {
+    width: 84%;
   }
 
   .main__search {
@@ -265,5 +275,50 @@
       margin-bottom: 9px;
       margin-left: 9px;
     }
+
+
+    #search__button {
+      width: 160px;
+      margin-left: 10px;
+    }
+
+    .search {
+
+      &__input {
+        width: 238px;
+        height: 38px;
+        border: 1px solid #cbcbcb;
+        border-radius: 4px;
+        background-clip: padding-box;
+        background-color: #fff;
+        box-shadow: 0 1px 0 #eee;
+        color: #999;
+        font-family: 'Roboto Light';
+        font-size: 14px;
+
+
+       }
+
+      }
+      .btn {
+
+        margin-bottom: 9px;
+      }
+
+      .btn_parthner {
+        margin-left: -16px;
+        margin-top: 3px;
+        width: 192px;
+        margin-bottom: 62px;
+      }
+
+      .btn_srch {
+        margin-top: 116px;
+      }
+
+      .main__info {
+        margin-top: 34px;
+        margin-bottom: 40px;
+      }
 
 }

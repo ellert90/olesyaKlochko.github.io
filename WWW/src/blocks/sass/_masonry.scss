@@ -16,7 +16,7 @@
 .grid-item {
   border-radius: 3px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-  margin: 2px;
+  margin: 2px auto;
 }
 
 .persent-size {
@@ -36,12 +36,19 @@
 
 
 @media (min-width: 940px) {
+  #gridContainer {
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom: -18px;
+
+  }
+
   #grid {
     width: 940px;
   }
 
   .persent-size {
-      width: 31%;
+      width: 32.73%;
   }
 
 }
