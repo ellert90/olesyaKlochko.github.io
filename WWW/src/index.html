@@ -124,12 +124,20 @@
         </div>
         <input type="submit" class="btn btn_white" value="See other partners">
         <h2 class="main__title">Discover holiday activity ideas</h2>
-        <div class="main_activity"></div>
+        <div id="gridContainer">
+           <script type="text/template" id="dataGrid">
+             <div id="grid">
+               <% for (var i = 0; i < 7; i++ ) { %>
+                <img class="grid-item persent-size" src="<%= data.results[i].media[0].gif.url %>">
+               <% } %>
+             </div>
+            </script>
+           </div>
         <h2 class="main__title">Discover holiday activity ideas</h2>
         <p class="main__info">Hi! What are your holiday interests?</p>
         <form class="main__search">
-          <input type="text" class="search__input" placeholder="Enter your interests">
-          <input type="submit" class="btn btn_red" value="Search partners">
+          <input type="text" class="search__input" id="search__request" placeholder="Enter your interests">
+          <input class="btn btn_red" id="search__button" type="button" value="Search partners"></input>
         </form>
       </div>
   </main>
@@ -164,6 +172,9 @@
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
   <script src="js/jquery.jcarousel.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+  <!-- <script src="js/masonry.pkgd.min.js"></script> -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src='js/main.js'></script>
 </body>
 </html>
