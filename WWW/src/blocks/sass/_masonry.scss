@@ -48,11 +48,12 @@
 
 @media (min-width: 768px) and (max-width: 939px) {
   #grid {
+    margin: 0 auto;
     width: 700px;
   }
 
   .persent-size {
-      width: 46%;
+      width: 48%;
   }
 
 }
@@ -63,15 +64,23 @@
     margin: 0 auto;
     margin-top: 36px;
     margin-bottom: -18px;
+    width: 922px;
+    margin-left: 0;
+    margin-right: 0;
 
   }
 
   #grid {
-    width: 940px;
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .persent-size {
-      width: 31.73%;
+      width: 32.73%;
   }
+
+
 
 }

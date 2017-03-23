@@ -230,17 +230,23 @@
         display: flex;
         flex-direction: row;
         margin: 40px auto;
-        width: 100%;
+        width: 922px;
         justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
     }
 
 
 
   #partner {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    margin: 0 auto;
     margin-top: 43px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .partner__desc {

@@ -178,10 +178,12 @@ input[type=submit] {
 
 
 @media (min-width: 940px) {
+
   .header__container {
     justify-content: space-between;
     align-items: center;
-    width: 940px;
+    width: 922px;
+
   }
 
   .logo-login {
@@ -193,12 +195,16 @@ input[type=submit] {
        margin-top: 40px;
       }
 
+   .login {
+     margin-left: 0;
+   }
+
    .logo {
      margin-top: 8px;
    }
 
    .header__info {
-         margin-top: 122px;
+     margin-top: 122px;
    }
 
    .header__title {
