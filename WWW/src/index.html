@@ -40,17 +40,17 @@
              <div class="jcarousel-wrapper">
                 <div class="jcarousel">
                     <ul>
-                      <li><img src="img/img3.jpg">
+                      <li><img src="img/img3.jpg" alt="image">
                           <a>step 1</a>
                           <h3>Sed leo enim, condimentum</h3>
                           <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
                        </li>
-                      <li><img src="img/img4.jpg">
+                      <li><img src="img/img4.jpg" alt="image">
                         <a>step 2</a>
                         <h3>Morbi velit risus</h3>
                         <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
                       </li>
-                      <li><img src="img/img5.jpg">
+                      <li><img src="img/img5.jpg" alt="image">
                         <a>step 3</a>
                         <h3>Sed leo enim, condimentum</h3>
                         <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
@@ -63,17 +63,17 @@
              <div class="jcarousel-wrapper">
                  <div class="jcarousel">
                      <ul>
-                       <li><img src="img/img3.jpg">
+                       <li><img src="img/img3.jpg" alt="image">
                            <a>step 1</a>
                            <h3>Sed leo enim, condimentum</h3>
                            <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
                         </li>
-                       <li><img src="img/img4.jpg">
+                       <li><img src="img/img4.jpg" alt="image">
                          <a>step 2</a>
                          <h3>Morbi velit risus</h3>
                          <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
                        </li>
-                       <li><img src="img/img5.jpg">
+                       <li><img src="img/img5.jpg" alt="image">
                          <a>step 3</a>
                          <h3>Sed leo enim, condimentum</h3>
                          <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
@@ -86,17 +86,17 @@
              <div class="jcarousel-wrapper">
                   <div class="jcarousel">
                       <ul>
-                        <li><img src="img/img3.jpg">
+                        <li><img src="img/img3.jpg" alt="image">
                             <a>step 1</a>
                             <h3>Sed leo enim, condimentum</h3>
                             <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
                          </li>
-                        <li><img src="img/img4.jpg">
+                        <li><img src="img/img4.jpg" alt="image">
                           <a>step 2</a>
                           <h3>Morbi velit risus</h3>
                           <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
                         </li>
-                        <li><img src="img/img5.jpg">
+                        <li><img src="img/img5.jpg" alt="image">
                           <a>step 3</a>
                           <h3>Sed leo enim, condimentum</h3>
                           <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
@@ -113,7 +113,7 @@
             <% for (var i = 0; i < data.length; i++ ) { %>
               <div class="partner__block">
                   <div class="partner__img">
-                    <img src="<%= data[i].img %>">
+                    <img src="<%= data[i].img %>" alt="image">
                     <i class="partner__icon <%= data[i].icon %>"></i>
                    </div>
                    <a class="partner__name"><%= data[i].name %></a>
@@ -129,7 +129,7 @@
              <div id="grid">
                <% for (var i = 0; i < 9; i++ ) { %>
                  <figure class="grid-item persent-size">
-                   <img src="<%= data.results[i].media[0].gif.url %>">
+                   <img src="<%= data.results[i].media[0].gif.url %>" alt="image">
                    <figcaption class="grid-title"><%= data.results[i].title %></figcaption>
                  </figure>
                <% } %>
