@@ -1,0 +1,42 @@
+
+.main {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  align-items: center;
+  margin-top: 135px;
+
+
+  &__title {
+    text-transform: uppercase;
+    color: #a7627f;
+    font-family: 'Times New Roman PSMT';
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    width: 60%;
+  }
+
+  &__play-box {
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+
+  }
+
+  &__info {
+   text-transform: capitalize;
+   font-style: italic;
+   font-family: 'Times New RomanPS ItalicMT';
+   font-size: 16px;
+   color: #343230;
+   margin-top: 20px;
+  }
+
+  &__scrolldown {
+    width: 40px;
+    height: 40px;
+    margin-top: 95px;
+  }
+
+}
