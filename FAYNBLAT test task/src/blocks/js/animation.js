@@ -10,7 +10,7 @@ $(function () {
 // анимация элементов навигации и центрального текста при загрузке - end
 
 // Плавное увеличение размера элемента при ховере - start
-  var $bigSizes = $('.nav__item, .language__item_nav, .fa, .icon-menu, .icon-menu_close');
+  var $bigSizes = $('.nav__item, .main__play-box, .language__item_nav, .fa, .icon-menu, .icon-menu_close');
 
   $bigSizes.hover(
      function() {
