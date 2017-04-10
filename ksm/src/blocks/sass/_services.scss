@@ -1,0 +1,56 @@
+$font: 'Roboto Bold', sans-serif;
+$color_black: #575454;
+$color_red: #ff0000;
+$color_white: #fff;
+$size: 1rem;
+
+.services {
+
+  &__title {
+    color: $color_black;
+    font-size: 18px;
+    font-family: 'Roboto Bold';
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+  }
+
+  &__info {
+    color: $color_black;
+    font-size: 14px;
+    font-family: 'Roboto Regular';
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 20px;
+  }
+
+  &__list {
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    color: $color_black;
+    font-size: 12px;
+    font-family: 'Roboto Regular';
+    text-align: justify;
+    list-style: circle;
+    line-height: 18px;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 959px) {
+
+
+}
+
+
+
+@media (min-width: 960px) {
+
+
+
+
+
+}
