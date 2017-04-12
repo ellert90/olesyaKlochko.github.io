@@ -6,6 +6,7 @@
 @import "footer";
 
 @import "services";
+@import "accordion";
 
 
 
@@ -18,3 +19,11 @@
 //   width: 100%;
 //   margin: auto;
 // }
+
+.brends {
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 100px auto;
+}
