@@ -87,10 +87,12 @@ $size: 1rem;
 .country {
 
   &__title {
-    color: $color_black;
+    color: $color_red;
     font-size: 16px;
     font-family: 'Roboto Bold';
     margin-bottom: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #e1dede;
   }
 
   &__text {
@@ -121,10 +123,13 @@ $size: 1rem;
 
 .about {
   &__title {
-    color: $color_black;
+    color: $color_red;
     font-size: 16px;
     font-family: 'Roboto Bold';
     margin-bottom: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #e1dede;
+
   }
 
   &__text {
@@ -142,11 +147,66 @@ $size: 1rem;
   }
 }
 
+.contact {
+  &__title {
+    color: $color_red;
+    font-size: 16px;
+    font-family: 'Roboto Bold';
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1dede;
+    line-height: 30px;
+
+  }
+
+  &__text {
+    color: $color_black;
+    font-size: 14px;
+    font-family: 'Roboto Regular';
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 18px;
+  }
+
+  &__img {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  &__list {
+    margin-left: 50px;
+  }
+
+  &__item {
+    color: $color_black;
+    font-size: 14px;
+    font-family: 'Roboto Regular';
+    margin-bottom: 7px;
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: $color_black;
+  }
+
+  &__map {
+    margin: 25px 0 10px 80px;
+    border: 1px solid #e1dede;
+    width: 552px;
+    height: 352px;
+  }
+}
+
 
 .bold-text {
   font-weight: 900;
 }
 
+.order_main {
+  float: right;
+  margin-top: 20px;
+  height: 30px;
+  padding: 0px 12px;
+}
 
 
 @media (min-width: 768px) and (max-width: 959px) {
