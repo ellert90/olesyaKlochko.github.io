@@ -80,39 +80,39 @@ $(function() {
 var htmlServices = $('#dataServices').html();
 var dataServices = [
 {
-  title: 'Express air delivery of cargoes',
+  title: 'Air delivery of cargoes',
   img: 'img/avia_freight.jpg',
-  desc: 'Express air delivery in KSM - is the delivery of cargoes to / from 220 countries in just 5 days + real financial guarantees. Customs clearance of cargos - for 1 day.',
+  desc: 'Airfreight cargo service from KSM Alliance - is the delivery of cargoes to / from more than 200 countries in just 5 days arranged by own agents worldwide.',
   link: 'services.html'
 },
 {
   title: 'Container cargo shipping',
   img: 'img/sea_freight.jpg',
-  desc: 'Our company provides services of goods delivery by sea "on a turnkey basis" or freight. + real financial guarantees. Customs clearance of cargos - for 1 day. - for 1.',
+  desc: 'We provide services of FCL (full container load) and LCL (less than container load) goods delivery by sea with main discharges in Gdynia, Gdansk, Hamburg, Copper etc.',
   link: 'services.html'
 },
 {
   title: 'International truck delivery',
   img: 'img/truck_freight.jpg',
-  desc: 'We provide a range of professional services for motor cargo transportation (including - as part of multimodal transportations) of cargos - for 1 day. - for 1.',
+  desc: 'We provide direct shipping service for truck cargo transportation within Europe and CIS countries, delivery via warehouses and delivery as part of multimodal transportations.',
   link: 'services.html'
 },
 {
-  title: 'Order of goods in China',
+  title: 'Trading and consulting',
   img: 'img/china_goods.jpg',
-  desc: 'We will help you to search, order, conduct quality control, and direct delivery of goods from China on favorable terms. - for 1 day. - for 1.',
+  desc: 'We will help you to buy goods in EU, UAE or China, arrange payment, find acceptable logistics solution and prepare shipping documents according to customs demands.',
   link: 'services.html'
 },
 {
-  title: 'Cargo customs clearance',
+  title: 'Logistics and customs',
   img: 'img/custom_clearence.jpg',
-  desc: 'Our highly skilled specialists custom cargo clearance quickly and at competitive rates of goods from China on favorable terms. - for 1 day. - for 1.',
+  desc: 'Because of good number of partner`s warehouses in Europe we can arrange consolidation, repacking and labeling services, cross-docking and clearance in EU and Ukraine.',
   link: 'services.html'
 },
 {
-  title: 'Importer and agent services',
+  title: 'Special cargo transportations',
   img: 'img/service_agent.jpg',
-  desc: 'We are ready to provide you with a comprehensive solution for single or regular delivery of goods to Poland / abroad - for 1 day. - for 1.',
+  desc: 'Our company operates not only with general cargoes, but also with dangerous goods, human remains, personal effects, exhibition goods, AOG and others.',
   link: 'services.html'
 }
 ];
