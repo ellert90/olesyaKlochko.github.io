@@ -3,10 +3,17 @@
       //= advantages.html
       //= country.html
       <div class="main-info">
-        <h2 class="main-info__title">Our services</h2>
-        <p class="main-info__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="main-info__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="main-info__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+        <div id="main-services">
+          <script type="text/template" id="dataServices">
+              <% for (var i = 0; i < data.length; i++ ) { %>
+             <div class="main-services__block">
+                 <a href="<%= data[i].link %>" class="main-services__title_link"><p class="main-services__title"><%= data[i].title %></p></a>
+                 <img src="<%= data[i].img %>" class="main-services__img"></i>
+                 <p class="main-services__desc"><%= data[i].desc %></p>
+                 <a href="<%= data[i].link %>" class="main-services__link">Read more...</a>
+                </div>
+              <% } %>
+           </script>
+        </div>
     </div>
 </main>
