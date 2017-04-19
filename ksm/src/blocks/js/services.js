@@ -10,31 +10,31 @@ var dataServices = [
 {
   title: 'Container cargo shipping',
   img: 'img/sea_freight.jpg',
-  desc: 'Our company provides services of goods delivery by sea "on a turnkey basis" or freight. ',
+  desc: 'Our company provides services of goods delivery by sea "on a turnkey basis" or freight. + real financial guarantees. Customs clearance of cargos - for 1 day. - for 1.',
   link: 'services.html'
 },
 {
   title: 'International truck delivery',
   img: 'img/truck_freight.jpg',
-  desc: 'We provide a range of professional services for motor cargo transportation (including - as part of multimodal transportations).',
+  desc: 'We provide a range of professional services for motor cargo transportation (including - as part of multimodal transportations) of cargos - for 1 day. - for 1.',
   link: 'services.html'
 },
 {
   title: 'Order of goods in China',
   img: 'img/china_goods.jpg',
-  desc: 'We will help you to search, order, conduct quality control, and direct delivery of goods from China on favorable terms.',
+  desc: 'We will help you to search, order, conduct quality control, and direct delivery of goods from China on favorable terms. - for 1 day. - for 1.',
   link: 'services.html'
 },
 {
   title: 'Cargo customs clearance',
   img: 'img/custom_clearence.jpg',
-  desc: 'Our highly skilled specialists custom cargo clearance quickly and at competitive rates.',
+  desc: 'Our highly skilled specialists custom cargo clearance quickly and at competitive rates of goods from China on favorable terms. - for 1 day. - for 1.',
   link: 'services.html'
 },
 {
   title: 'Importer and agent services',
   img: 'img/service_agent.jpg',
-  desc: 'We are ready to provide you with a comprehensive solution for single or regular delivery of goods to Poland / abroad.',
+  desc: 'We are ready to provide you with a comprehensive solution for single or regular delivery of goods to Poland / abroad - for 1 day. - for 1.',
   link: 'services.html'
 }
 ];
