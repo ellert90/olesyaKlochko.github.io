@@ -41,13 +41,15 @@ $size: 1rem;
   color: $color_white;
   font-family: 'Roboto Regular';
   margin-right: 50px;
-  padding: 5px 12px;
+  padding: 4px 12px;
   border-radius: 6px;
   height: 33px;
+  border: 2px solid  $color_red;
+  transition: background 0.3s ease-out 0.2s;
 }
 .order:hover {
-    opacity: 1;
-    color: $color_black;
+    color: $color_red;
+    background: $color_white;
 }
 
 .slogan {

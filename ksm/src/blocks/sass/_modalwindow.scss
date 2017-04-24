@@ -90,8 +90,12 @@ form {
   margin-top: -3px;
 }
 
+
+
+
 .order__button_close:hover {
-  color: $color_black;
+  // color: $color_black;
+  transform: rotate(45deg);
 }
 
 .order__button_close:active, .order__button_close:visited {

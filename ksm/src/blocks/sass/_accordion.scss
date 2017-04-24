@@ -60,9 +60,11 @@ $size: 1rem;
   &__content {
     background-color: transparent;
     display: none;
+    transition: display 3s ease-out 1.7s;
 
     &_active {
       display: block;
+      transition: display 3s ease-out 1.7s;
     }
 
     & p {
