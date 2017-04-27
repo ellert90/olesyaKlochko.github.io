@@ -3,6 +3,12 @@ $color_black: #444;
 $color_white: #fff;
 $size: 1rem;
 
+body {
+  font-family: $font;
+  font-size: 15px;
+  color: $color_white;
+}
+
 .header {
   background: linear-gradient(to bottom, rgba(0,0,0, .5) 0%, rgba(0,0,0, .5) 25%, rgba(0,0,0, .25) 100%), url(../img/bg_1.jpg) center no-repeat;
   background-size: cover;
@@ -44,9 +50,7 @@ position: absolute;
 }
 
 .town {
-  font-family: $font;
   font-size: 15px;
-  color: $color_white;
   margin-left: 460px;
 
 
@@ -61,9 +65,7 @@ position: absolute;
 .phones {
 
   &__item {
-    font-family: $font;
     font-size: 14px;
-    color: $color_white;
     width: 160px;
     height: 36px;
     line-height: 32px;
@@ -78,12 +80,10 @@ position: absolute;
 }
 
 .fa-phone {
-  border: 1px solid $color_white;
   border-radius: 17px;
   font-size: 22px;
   width: 34px;
   height: 34px;
-  line-height: 33px;
   padding-left: 8px;
 
 }
@@ -95,32 +95,23 @@ position: absolute;
 
 .tours {
 
-
-
   &__item {
-    font-family: $font;
     font-size: 15px;
-    color: $color_white;
   }
 }
 
 .help {
   margin-top: 21px;
 
-
   &__item {
-    font-family: $font;
     font-size: 15px;
-    color: $color_white;
   }
 }
 
 .slogan {
-    font-family: $font;
     font-size: 32px;
     text-align: center;
     font-weight: bold;
-    color: $color_white;
 
    &_h2 {
      font-size: 22px;

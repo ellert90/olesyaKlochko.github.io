@@ -5,18 +5,22 @@ $size: 1rem;
 
 .main {
   background-color: #fff;
+}
 
-  &__container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    min-width: 300px;
-    max-width: 960px;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
+.search-container {
+  background-color: #ffF;
+}
+
+.search {
+  min-width: 300px;
+  max-width: 1160px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  & img {
+      margin: 0 auto;
   }
-
 }
 
 .about-container {
@@ -152,7 +156,7 @@ background-color: #ffe;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
+    margin: 20px 0;
   }
 
   &__item {
@@ -186,4 +190,97 @@ background-color: #ffe;
   display: inline-block;
   margin-left: 10px;
   margin-top: 10px;
+}
+
+
+.join-container {
+  background: #f4f4f4;
+}
+
+.join {
+  min-width: 300px;
+  max-width: 1160px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+}
+
+.subscribe {
+  width: 50%;
+  margin-right: 50px;
+  margin-left: 60px;
+
+  &__block {
+  border: 2px dashed red;
+  background: $color_white;
+
+  }
+
+  &__form {
+    margin: 20px;
+    margin-left: 22px;
+  }
+
+  &__email {
+    font-family: $font;
+    box-sizing: border-box;
+    width: 61%;
+    padding: 20px;
+    height: 40px;
+    line-height: 20px;
+    border: none;
+    background-color: #f0f0f0;
+    font-size: 16px;
+  }
+  &__btn {
+    box-sizing: border-box;
+    width: 35%;
+    height: 40px;
+    background: #FF3232;
+    border: none;
+    color: $color_white;
+    transition: ease .5s;
+    display: inline-block;
+    text-align: center;
+    font-family: $font;
+    margin-left: -4px;
+    &:hover {
+       background: #e52d2d;
+    }
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+
+  &__text {
+        font-family: $font;
+        color: $color_black;
+        font-size: 14px;
+        line-height: 18px;
+        width: 36%;
+        margin-left: 20px
+  }
+
+  .fa-calendar,
+  .fa-star-o {
+
+    color: $color_black;
+    font-size: 20px;
+    line-height: 28px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+
+  }
+
+}
+
+.facebook {
+  width: 50%;
 }
